@@ -25,7 +25,7 @@
 
     <source-file src="src/android/com/example/Hellojni/Hello.java" target-dir="src/com/example/plugin/"/>
     <source-file src="src/android/com/example/Hellojni/HelloJni.java" target-dir="src/com/example/plugin/" />
-    <source-file src="src/android/libs/armeabi/libhello-jni.so" target-dir="libs/armeabi/" /> -->
+    <source-file src="src/android/libs/armeabi/libhello-jni.so" target-dir="libs/armeabi/" />
   </platform>
 
 </plugin>
