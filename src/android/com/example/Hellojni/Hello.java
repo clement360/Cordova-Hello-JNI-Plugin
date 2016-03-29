@@ -3,6 +3,8 @@ package com.example.plugin;
 import org.apache.cordova.*;
 import org.json.JSONArray;
 import org.json.JSONException;
+import android.app.Activity;
+import android.os.Bundle;
 
 public class Hello extends CordovaPlugin {
 
@@ -11,8 +13,9 @@ public class Hello extends CordovaPlugin {
 
         if (action.equals("greet")) {
 
+            String jniString = HelloJni.stringFromJNI();
             String name = data.getString(0);
-            String message = "Hello, " + name;
+            String message = "Hello, " + name + ". JNI says: " + jniString;
             callbackContext.success(message);
 
             return true;

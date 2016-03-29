@@ -23,23 +23,9 @@
       </feature>
     </config-file>
 
-    <source-file src="src/android/Hello.java" target-dir="src/com/example/plugin/"/>
-  </platform>
-
-  <platform name="ios">
-    
-    <config-file target="config.xml" parent="/widget">
-      <feature name="Hello">
-        <param name="ios-package" value="HWPHello" />
-      </feature>
-    </config-file>
-
-    <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
-  </platform>
-
-  <platform name="wp7">
-    <source-file src="src/wp7/Hello.cs"/>
+    <source-file src="src/android/com/example/Hellojni/Hello.java" target-dir="src/com/example/plugin/"/>
+    <source-file src="src/android/com/example/Hellojni/HelloJni.java" target-dir="src/com/example/plugin/" />
+    <source-file src="src/android/libs/armeabi/libhello-jni.so" target-dir="libs/armeabi/" /> -->
   </platform>
 
 </plugin>
