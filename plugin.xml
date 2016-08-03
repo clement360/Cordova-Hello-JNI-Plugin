@@ -39,6 +39,6 @@
     <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
     <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
     <header-file src="src/ios/test.h" target-dir="HelloPlugin"/>
-    <source-file src="src/ios/test.c" target-dir="HelloPlugin">
+    <source-file src="src/ios/test.c" target-dir="HelloPlugin"/>
   </platform>
 </plugin>
