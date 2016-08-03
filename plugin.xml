@@ -28,4 +28,14 @@
     <source-file src="src/android/libs/armeabi/libhello-jni.so" target-dir="libs/armeabi/" />
   </platform>
 
+  <platform name="ios">
+
+    <config-file target="config.xml" parent="/widget">
+      <feature name="Hello">
+        <param name="ios-packege" value="HWPHello" />
+      </feature>
+    </config-file>
+
+    <header-file src="src/ios/HWPHello.h" target-dir="HelloPlugin"/>
+    <source-file src="src/ios/HWPHello.m" target-dir="HelloPlugin"/>
 </plugin>
