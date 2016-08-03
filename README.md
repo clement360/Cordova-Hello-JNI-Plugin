@@ -24,3 +24,12 @@ hello.greet("World", success, failure);
 I did this to help anyone like me who tirelessy searched for a simple example of running C code in a Cordova/Ionic application. This is usually a problem faced by people who midway through app development realize they need to use a C library.
 
 Disclaimer: This was my first attempt at writing a cordova plugin and my first time using NDK. There may be huge flaws in my implementation, feel free to make a pull request for fixes. 
+
+
+##iOs platform
+Now you can call c-function from objective-c class. Just create your c-file and put in the same folder.
+
+dependency: you should update your ios platform like this:
+```
+cordova platform update ios@4.2.0
+```
